@@ -4,8 +4,7 @@ public class Main {
   static int b = 12;
 
     public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-      for (int g = 0; g<=99; g=g+1){
+      for (int i = 0; i<=99; i=i+1){
         a++;
         b++;
         String digits = e.substring(a,b);
@@ -21,8 +20,8 @@ public class Main {
     if(num <2){
         return false;
     }
-    for (int g = 2; g<=Math.sqrt(num);g=g+1){
-      if (num%g==0){
+    for (int i = 2; i<=Math.sqrt(num);i=i+1){
+      if (num%i==0){
         return false;
       }
     }
