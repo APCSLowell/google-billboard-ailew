@@ -6,18 +6,18 @@ public class Main {
             String digits = e.substring(i, i + 10);
             double dNum = Double.parseDouble(digits);
 
-            if (isPrime((long) dNum)) {
+            if (isPrime((double) dNum)) {
                 System.out.println("First 10-digit prime in 'e': " + digits);
                 break;
             }
         }
     }
 
-    public static boolean isPrime(long num) {
+    public static boolean isPrime(double num) {
         if (num < 2) {
             return false;
         }
-        for (long i = 2; i <= Math.sqrt(num); i++) {
+        for (double i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 return false;
             }
