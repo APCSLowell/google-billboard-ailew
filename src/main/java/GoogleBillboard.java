@@ -3,26 +3,24 @@ public class Main {
 
     public static void main(String[] args) {
         String result;
-        for (int i = 2; i <e.length()-2; i++)
-          {
-            result = e.substring(i,i+10);
-            if (isPrime(Double.parseDouble(result)))
-            {
-              System.out.print(result);
-              break;
+        for (int i = 0; i <= e.length() - 10; i++) {
+            result = e.substring(i, i + 10);
+            if (isPrime(Long.parseLong(result))) {
+                System.out.print(result);
+                break;
             }
-          }
+        }
     }
-    public boolean isPrime(double num){
-        if(num < 2){
+
+    public static boolean isPrime(long num) {
+        if (num < 2) {
             return false;
         }
-        for(int i = 2; i<=Math.sqrt(num); i++){
-            if(num % i == 0){
-              return false;
+        for (long i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
             }
         }
-      return true;
-  
+        return true;
     }
 }
