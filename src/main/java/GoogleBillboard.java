@@ -4,15 +4,12 @@ public class Main {
   static int b = 12;
 
     public static void main(String[] args) {
-      for (int i = 0; i<=99; i=i+1){
-        a++;
-        b++;
-        String digits = e.substring(a,b);
-        double output = Double.parseDouble(digits);
-        if (isPrime(output)==true){
-          System.out.println(output);
-        }
-      }
+        for(int i = 10; i < ee.length(); i++){
+            if(isPrime(Double.parseDouble(ee.substring(i-10, i)))){
+             System.out.println(ee.substring(i-10, i));
+                break;
+            }
+         }
     
     }
     
