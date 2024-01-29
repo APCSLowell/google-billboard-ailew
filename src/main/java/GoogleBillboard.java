@@ -10,7 +10,7 @@ public void setup()
  }
 }  
     
-  public static boolean isPrime(double num) { 
+  public boolean isPrime(double num) { 
     if(num <2){
         return false;
     }
